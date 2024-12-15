@@ -1,0 +1,70 @@
+/* Dark Mode Styles */
+body {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+}
+
+/* Dark Mode Header */
+header {
+    background: linear-gradient(45deg, #333, #555);
+}
+
+/* Dark Mode Section */
+section {
+    background: linear-gradient(45deg, #333, #555);
+    color: #e0e0e0; /* Light text */
+}
+
+/* Dark Mode CTA Button */
+.cta-button, nav ul li a {
+    background: #333;
+    color: #81C784; /* Green for dark mode */
+}
+
+.cta-button:hover, nav ul li a:hover {
+    background: #4CAF50;
+    color: #fff;
+}
+
+/* Dark Mode Footer */
+footer {
+    background: #222;
+}
+
+/* Media Query for Dark Mode */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens in dark mode */
+    }
+
+    .hero p {
+        font-size: 1.2rem; /* Adjust paragraph size */
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+}
+
+/* Dark Mode Button Override */
+body.dark-mode #darkModeToggle {
+    background-color: #333; /* Dark background for the button */
+    color: #e0e0e0; /* Light text */
+}
+
+body.dark-mode #darkModeToggle:hover {
+    background-color: #388E3C; /* Darker green when hovering in dark mode */
+}

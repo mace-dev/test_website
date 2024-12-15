@@ -1,0 +1,278 @@
+/* GLOBAL */
+html, body {
+    height: 100%; /* Ensure the body takes up the full height */
+    margin: 0;    /* Remove default margin */
+}
+
+body {
+    line-height: 1.6;
+    color: #f1f1f1;
+    background-color: #fff;
+    position: relative; /* Ensures the button stays above the content */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    font-family: 'Sedgwick Ave', cursive, sans-serif; /* Apply Sedgwick Ave Display font */
+}
+/* FONT */
+body {
+    font-family: 'Sedgwick Ave', cursive, sans-serif; /* Apply Sedgwick Ave Display font */
+}
+
+h1 {
+    font-size: 7rem; /* Make h1 the largest text */
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 3rem; /* Adjust for h2 to be slightly smaller than h1 */
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 2rem; /* Adjust for h3 */
+}
+
+p {
+    font-size: 1.5rem; /* Adjust paragraph font size */
+}
+
+/* For larger text sizes on specific elements like buttons */
+.cta-button {
+    font-size: 1.2rem; /* Slightly larger button text */
+}
+
+/* HEADER */
+header {
+    background: #4caf50;
+    color: #fff;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    position: relative; /* Ensure header doesn't interfere with the button */
+    z-index: 1; /* Keep header behind the button */
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 4rem; /* Make h1 in hero section large */
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem; /* Adjust paragraph in hero section */
+    margin-bottom: 2rem;
+}
+
+/* CTA Button and Navigation Links */
+.cta-button, nav ul li a {
+    text-decoration: none;
+    background: #fff;
+    color: #4CAF50;
+    padding: 0.5rem 0.5rem;
+    margin-top: 100px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover, nav ul li a:hover {
+    background: #69f06d;
+    color: #fff;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 5px;
+    margin: 10px;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+/* Section Styling */
+section {
+    margin: 2rem;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: #4caf50;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+footer p a:hover {
+    color: #69f06d;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .hero p {
+        font-size: 1.2rem; /* Adjust paragraph size for smaller screens */
+    }
+
+    h1 {
+        font-size: 4rem; /* Make h1 a bit smaller for mobile */
+    }
+
+    h2 {
+        font-size: 2.2rem; /* Adjust h2 for mobile */
+    }
+
+    p {
+        font-size: 1.3rem; /* Adjust paragraph text size */
+    }
+}
+
+#button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    background-color: #69f06d;
+    color: white;
+    border: none;
+    border-radius: 50%; /* Make the button circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 9999; /* High z-index to ensure it's above all other content */
+    transition: background-color 0.3s ease;
+    display: flex; /* Center the icons */
+    align-items: center; /* Vertically center the icon */
+    justify-content: center; /* Horizontally center the icon */
+    width: 50px; /* Set a fixed size for the button */
+    height: 50px; /* Make it square to maintain the circle shape */
+}
+
+#button i {
+    font-size: 1.2rem; /* Make the icon smaller */
+}
+
+#button:hover {
+    background-color: #388E3C;
+}
+
+#button:focus {
+    outline: none;
+}
+
+/* Contact */
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+   
+}
+
+.contact-info a {
+    color: #349024;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Form Styling */
+.contact-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-top: 2rem;
+    max-width: 100%; /* Restrict form width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Adjust the width of the form elements */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+textarea {
+    resize: none;
+}
+
+/* Button Styling */
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #69f06d;
+}
+
+
